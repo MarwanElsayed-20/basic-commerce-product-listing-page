@@ -38,7 +38,7 @@ This project is a simple e-commerce product listing page built with Next.js (App
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/basic-commerce-product-listing.git
-2. Navigate into the project directory
+2. Navigate into the project directory ```
   ```bash
    cd basic-commerce-product-listing
 4. Install dependencies:

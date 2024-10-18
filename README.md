@@ -1,5 +1,3 @@
-# Writing the README content into a README.md file
-
 # Basic Commerce Product Listing Page
 
 This project is a simple e-commerce product listing page built with Next.js (App Router), TailwindCSS, and the Fake Store API. The application displays a list of products in a clean and responsive UI, showcasing key product information including the image, title, price, and rating. The goal of this project is to demonstrate front-end development skills by creating a mobile-friendly and visually appealing interface using modern web technologies.

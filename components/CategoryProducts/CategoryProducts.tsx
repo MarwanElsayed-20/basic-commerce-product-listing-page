@@ -16,6 +16,10 @@ export default async function CategoryProducts({
     endpoint: `products/category/${category}`,
   });
 
+  if (!categoryProducts) {
+    return <p>Products not found</p>;
+  }
+
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 ">

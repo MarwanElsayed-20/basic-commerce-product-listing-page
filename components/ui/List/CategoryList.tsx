@@ -8,10 +8,14 @@ export default async function CategoryList() {
     endpoint: "products/categories",
   });
 
+  if (!categories) {
+    return <p>Categories not found</p>;
+  }
+
   return (
     <div className="flex items-center gap-2">
       <ul className="flex flex-row overflow-auto lg:flex-nowrap lg:flex-col gap-2 lg:gap-4 w-full">
-        {categories.map((category: CategoryT, index: number) => (
+        {categories?.map((category: CategoryT, index: number) => (
           <Link
             key={index}
             href={`/category/${category.split(" ").join("-").toLowerCase()}`}

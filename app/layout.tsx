@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar/Sidebar";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <div className="flex items-center flex-col lg:flex-row gap-6 p-6 shadow-sm h-full w-full rounded-md bg-neutral">
           <Sidebar />
           {children}
+          <Analytics />
         </div>
       </body>
     </html>
